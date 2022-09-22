@@ -1,15 +1,15 @@
 import { ElementType, forwardRef, ReactElement } from 'react'
 import { LayoutContainer } from './LayoutContainer'
-import { defaultProps, CoreProps, CharacterProps } from './model'
+import { defaultProps, AllProps } from './model'
 
 type AspectFrameComponent = <As extends ElementType>(
-  props: CoreProps<As> & CharacterProps
+  props: AllProps<As>
 ) => ReactElement | null
 
 const _AspectFrame = <As extends ElementType>(
-  { as, ref, children, ...props }: CoreProps<As> = {
+  { ref, as, children, ...props }: AllProps<As> = {
     ...defaultProps
-  }
+  } as AllProps<As>
 ) => {
   return (
     <LayoutContainer {...props} ref={ref} as={as || 'div'}>
