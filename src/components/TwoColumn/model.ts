@@ -5,7 +5,7 @@ import {
   NotRequired,
   PolymorphicComponentPropWithRef
 } from '@polym/react-props'
-import { ElementType } from 'react'
+import { ElementType, ReactElement } from 'react'
 
 export const subColumnOptions = ['first', 'last'] as const
 export type SubColumn = typeof subColumnOptions[number]
@@ -28,8 +28,10 @@ const conf = {
 export type CharacterProps = getPropType<typeof conf>
 
 export type CoreProps<As extends ElementType> =
-  PolymorphicComponentPropWithRef<As>
+  PolymorphicComponentPropWithRef<As> & {
+    children: [ReactElement, ReactElement]
+  }
 
 export type AllProps<As extends ElementType> = CharacterProps & CoreProps<As>
 
-export const defaultProps = getDefaultProps<CharacterProps>
+export const defaultProps = getDefaultProps<CharacterProps>(conf)
