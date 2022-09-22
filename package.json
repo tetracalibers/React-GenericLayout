@@ -59,6 +59,7 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
-    "@polym/react-props": "*"
+    "@polym/react-props": "*",
+    "styled-components": "^5.3.5"
   }
 }
