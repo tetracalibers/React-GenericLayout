@@ -19,6 +19,7 @@
     "declarationDir": "./types",
     "jsx": "react-jsx"
   },
-  "include": ["lib"],
+  "include": ["src"],
+  "exclude": ["src/stories"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
