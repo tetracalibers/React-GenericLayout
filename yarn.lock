@@ -1498,6 +1498,13 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@polym/react-props@*":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@polym/react-props/-/react-props-0.0.2.tgz#91baea6eff944086ced21dbe582da9126e3a3470"
+  integrity sha512-Lwvct3oskpMuWTDEQRNYQ9x8/X0E+vu7QfRDvE5+e/9yFogrlU+KkJLklg8hhUfXY0ah9l9fayClYxzZHvM9yw==
+  dependencies:
+    lodash "^4.17.21"
+
 "@rollup/pluginutils@^4.2.1":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
