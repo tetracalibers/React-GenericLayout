@@ -2,8 +2,10 @@ import {
   CSSt,
   getDefaultProps,
   getPropType,
-  NotRequired
+  NotRequired,
+  PolymorphicComponentPropWithRef
 } from '@polym/react-props'
+import { ElementType } from 'react'
 
 const conf = {
   // テキストも中央揃えにするか
@@ -17,5 +19,10 @@ const conf = {
 }
 
 export type CharacterProps = getPropType<typeof conf>
+
+export type CoreProps<As extends ElementType> =
+  PolymorphicComponentPropWithRef<As>
+
+export type AllProps<As extends ElementType> = CharacterProps & CoreProps<As>
 
 export const defaultProps = getDefaultProps<CharacterProps>(conf)
