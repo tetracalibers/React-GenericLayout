@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { CharacterProps } from './model'
 
-export const StyledElement = styled.div<CharacterProps>`
+export const LayoutContainer = styled.div<CharacterProps>`
   --space: ${({ spaceV, spaceU }) => `${spaceV}${spaceU}`};
   --padding: ${({ paddingV, paddingU }) => `${paddingV}${paddingU}`};
   --min-height: ${({ minHeightV, minHeightU }) => `${minHeightV}${minHeightU}`};
