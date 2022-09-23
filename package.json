@@ -38,9 +38,7 @@
     "lintfix": "npm run lint -- --fix",
     "format": "prettier --write \"**/*.+(js|json|yml|ts|tsx)\"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "predeploy": "build-storybook -- --preview-url=/polym-every-layout/iframe.html",
-    "deploy": "gh-pages -d storybook-static"
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": "^18.2.0",
@@ -76,7 +74,6 @@
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.4",
-    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
     "react-lorem-ipsum": "^1.4.10",
     "typescript": "^4.6.4",
