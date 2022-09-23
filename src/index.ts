@@ -6,6 +6,8 @@ import { HorizontalStack } from './components/HorizontalStack'
 import { Grid } from './components/Grid'
 import { VerticalCenter } from './components/VerticalCenter'
 import { HorizontalCenter } from './components/HorizontalCenter'
+import { OverlapLayer } from './components/OverlapLayer'
+import { SliderAlign } from './components/SliderAlign'
 
 export {
   AspectFrame,
@@ -15,5 +17,7 @@ export {
   HorizontalStack,
   Grid,
   VerticalCenter,
-  HorizontalCenter
+  HorizontalCenter,
+  OverlapLayer,
+  SliderAlign
 }
