@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
-import { CharacterProps } from './model'
+import { UpperProps } from './model/upper'
 
-export const Overlay = styled.div<CharacterProps>`
+export const Overlay = styled.div<UpperProps>`
   --position: ${({ fixed }) => (fixed ? 'fixed' : 'absolute')};
 
   && {

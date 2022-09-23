@@ -1,5 +1,10 @@
 {
-  "name": "@polym/generic-layout",
+  "name": "@polym/every-layout",
+  "description": "Collection of React generic layout components inspired by every-layout",
+  "author": {
+    "name": "tomixy"
+  },
+  "license": "MIT",
   "version": "0.0.0",
   "type": "module",
   "types": "./types/index.d.ts",
@@ -7,12 +12,12 @@
     "/dist",
     "/types"
   ],
-  "main": "./dist/polym-GenericLayout.umd.js",
-  "module": "./dist/polym-GenericLayout.es.js",
+  "main": "./dist/polym-every-layout.umd.js",
+  "module": "./dist/polym-every-layout.es.js",
   "exports": {
     ".": {
-      "import": "./dist/polym-GenericLayout.es.js",
-      "require": "./dist/polym-GenericLayout.umd.js"
+      "import": "./dist/polym-every-layout.es.js",
+      "require": "./dist/polym-every-layout.umd.js"
     }
   },
   "scripts": {

@@ -11,8 +11,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: '@polym/generic-layout',
-      fileName: (format) => `polym-GenericLayout.${format}.js`
+      name: '@polym/every-layout',
+      fileName: (format) => `polym-every-layout.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom']
