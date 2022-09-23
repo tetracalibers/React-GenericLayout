@@ -4,7 +4,7 @@ import { CharacterProps } from './model'
 const css_Variables = css<CharacterProps>`
   --sub-max-width: ${(props) => props.subMaxWidthV! + props.subMaxWidthU!};
   --main-min-width: ${(props) => props.mainMinWidthPer! + '%'};
-  --gap: ${(props) => props.gapV! + props.gapU!};
+  --gap: ${(props) => props.spaceV! + props.spaceU!};
 `
 
 const css_SubColumn = css`

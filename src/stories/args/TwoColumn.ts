@@ -82,7 +82,7 @@ export const desc_TwoColumnProps = {
       }
     }
   },
-  gapV: {
+  spaceV: {
     ...desc_CSS.gap,
     control: {
       type: 'number'
@@ -91,12 +91,12 @@ export const desc_TwoColumnProps = {
     table: {
       ...desc_CSS.gap.table,
       defaultValue: {
-        summary: defaultProps.gapV,
+        summary: defaultProps.spaceV,
         details: null
       }
     }
   },
-  gapU: {
+  spaceU: {
     ...desc_CSS.gap,
     control: {
       type: 'select'
@@ -106,7 +106,7 @@ export const desc_TwoColumnProps = {
     table: {
       ...desc_CSS.gap.table,
       defaultValue: {
-        summary: defaultProps.gapU,
+        summary: defaultProps.spaceU,
         details: null
       }
     }
