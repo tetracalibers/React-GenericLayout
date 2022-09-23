@@ -2,6 +2,10 @@
 
 **Collection of React generic layout components inspired by [Every-Layout](https://every-layout.dev/)**
 
+## Demo & Document
+
+[Click here](https://tetracalibers.github.io/polym-every-layout/?path=/story/layout-introduction--page)to visit the playground site where you can operate and play props.
+
 ## Concept
 
 ### as props
