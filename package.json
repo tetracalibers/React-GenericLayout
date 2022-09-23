@@ -39,7 +39,7 @@
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@polym/react-props": "*",
-    "@polym/story-cssdata": "^0.0.0",
+    "@polym/story-cssdata": "*",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",

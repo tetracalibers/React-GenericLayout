@@ -1527,10 +1527,10 @@
   dependencies:
     lodash "^4.17.21"
 
-"@polym/story-cssdata@^0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@polym/story-cssdata/-/story-cssdata-0.0.0.tgz#a291cbb7232c185c865814ff650b2c4d331df80d"
-  integrity sha512-3alFMPT2Uf7esRepsW27gFB1OWhhwMmdUUAp6yD66YAQTTAmvaWj4Ll93dH88EmVGIbVSsGL/OQv9+j60Vu4zA==
+"@polym/story-cssdata@*":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@polym/story-cssdata/-/story-cssdata-0.0.1.tgz#e8626f969d076f2988e4703bad277edff3bc56ba"
+  integrity sha512-SikmcW2BwuT4LsMimA669E3q2Hs4kbnjjJee1TaK6nqZbF3MxmUfVL4idB03EcBfANTOCRo0h/G9elS1yM3hfQ==
   dependencies:
     lodash "^4.17.21"
 
