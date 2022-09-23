@@ -17,6 +17,5 @@ export default defineConfig({
     rollupOptions: {
       external: ['react', 'react-dom']
     }
-  },
-  base: '/polym-every-layout'
+  }
 })

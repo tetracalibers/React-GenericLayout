@@ -1,6 +1,8 @@
 ## the src folder
 src
 .storybook
+storybook-static
+script
 
 ## node modules folder
 node_modules
