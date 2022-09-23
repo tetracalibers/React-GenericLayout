@@ -1,7 +1,6 @@
 # memo
 *.txt
 experimental
-storybook-static
 
 # Logs
 logs
