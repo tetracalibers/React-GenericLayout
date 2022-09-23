@@ -1,4 +1,5 @@
 import { CSSt } from '@polym/react-props'
+import { desc_CSS } from '@polym/story-cssdata'
 import { defaultProps } from '../../components/TwoColumn/model'
 import { subColumnOptions } from '../../components/TwoColumn/model'
 
@@ -14,7 +15,7 @@ export const desc_TwoColumnProps = {
       type: {
         summary: null
       },
-      category: 'style control',
+      category: 'style',
       defaultValue: {
         summary: defaultProps.subColumn,
         details: null
@@ -22,15 +23,13 @@ export const desc_TwoColumnProps = {
     }
   },
   mainMinWidthPer: {
+    ...desc_CSS.minWidth,
     control: {
       type: 'number'
     },
     description: 'Minimum width of main content in horizontal arrangement (%)',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.minWidth.table,
       defaultValue: {
         summary: defaultProps.mainMinWidthPer,
         details: null
@@ -47,7 +46,7 @@ export const desc_TwoColumnProps = {
       type: {
         summary: null
       },
-      category: 'style control',
+      category: 'style',
       defaultValue: {
         summary: defaultProps.noStretchHeight,
         details: null
@@ -55,15 +54,13 @@ export const desc_TwoColumnProps = {
     }
   },
   subMaxWidthV: {
+    ...desc_CSS.maxWidth,
     control: {
       type: 'number'
     },
     description: 'Width of sidebar when side-by-side',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.maxWidth.table,
       defaultValue: {
         summary: defaultProps.subMaxWidthV,
         details: null
@@ -71,16 +68,14 @@ export const desc_TwoColumnProps = {
     }
   },
   subMaxWidthU: {
+    ...desc_CSS.maxWidth,
     control: {
       type: 'select'
     },
     options: CSSt.Unit.length,
     description: 'Unit of subMaxWidthV',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.maxWidth.table,
       defaultValue: {
         summary: defaultProps.subMaxWidthU,
         details: null
@@ -88,15 +83,13 @@ export const desc_TwoColumnProps = {
     }
   },
   gapV: {
+    ...desc_CSS.gap,
     control: {
       type: 'number'
     },
     description: 'Gap between sidebar and main content',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.gap.table,
       defaultValue: {
         summary: defaultProps.gapV,
         details: null
@@ -104,16 +97,14 @@ export const desc_TwoColumnProps = {
     }
   },
   gapU: {
+    ...desc_CSS.gap,
     control: {
       type: 'select'
     },
     options: CSSt.Unit.length,
     description: 'Unit of gapV',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.gap.table,
       defaultValue: {
         summary: defaultProps.gapU,
         details: null

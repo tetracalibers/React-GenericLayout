@@ -8,10 +8,7 @@ export const desc_children = {
       type: {
         summary: null
       },
-      category: 'character'
-    },
-    type: {
-      required: true
+      category: 'react'
     }
   }
 }

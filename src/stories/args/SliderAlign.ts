@@ -4,16 +4,14 @@ import { defaultProps } from '../../components/SliderAlign/model'
 
 export const desc_SliderAlignProps = {
   spaceV: {
+    ...desc_CSS.marginLeft,
     control: {
       type: 'number'
     },
     description:
       'Numerical value indicating the size of the gap between each item',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.marginLeft.table,
       defaultValue: {
         summary: defaultProps.spaceV,
         details: null
@@ -21,16 +19,14 @@ export const desc_SliderAlignProps = {
     }
   },
   spaceU: {
+    ...desc_CSS.marginLeft,
     control: {
       type: 'select'
     },
     options: CSSt.Unit.length,
     description: 'Units of spaceV',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.marginLeft.table,
       defaultValue: {
         summary: defaultProps.spaceU,
         details: null
@@ -46,7 +42,7 @@ export const desc_SliderAlignProps = {
       type: {
         summary: null
       },
-      category: 'scrollbar',
+      category: 'ScrollBar',
       defaultValue: {
         summary: defaultProps.hideScrollBar,
         details: null
@@ -54,15 +50,14 @@ export const desc_SliderAlignProps = {
     }
   },
   barHeightV: {
+    ...desc_CSS.height,
     control: {
       type: 'number'
     },
     description: 'Numeric value representing the height of the scrollbar area',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'scrollbar',
+      ...desc_CSS.height.table,
+      category: 'ScrollBar',
       defaultValue: {
         summary: defaultProps.barHeightV,
         details: null
@@ -70,16 +65,15 @@ export const desc_SliderAlignProps = {
     }
   },
   barHeightU: {
+    ...desc_CSS.height,
     control: {
       type: 'select'
     },
     options: CSSt.Unit.length,
     description: 'Units of barHeightV',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'scrollbar',
+      ...desc_CSS.height.table,
+      category: 'ScrollBar',
       defaultValue: {
         summary: defaultProps.barHeightU,
         details: null
@@ -87,16 +81,14 @@ export const desc_SliderAlignProps = {
     }
   },
   paddingV: {
+    ...desc_CSS.padding,
     control: {
       type: 'number'
     },
     description:
       'Numeric value representing the size of the space between the four sides of the Slider and the child elements.',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.padding.table,
       defaultValue: {
         summary: defaultProps.paddingV,
         details: null
@@ -104,16 +96,14 @@ export const desc_SliderAlignProps = {
     }
   },
   paddingU: {
+    ...desc_CSS.padding,
     control: {
       type: 'select'
     },
     options: CSSt.Unit.length,
     description: 'Units of paddingV',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.padding.table,
       defaultValue: {
         summary: defaultProps.paddingU,
         details: null
@@ -147,7 +137,7 @@ export const desc_SliderAlignProps = {
     description: 'Background color of scrollbar area',
     table: {
       ...desc_CSS.backgroundColor.table,
-      subcategory: 'scrollbar',
+      category: 'ScrollBar',
       defaultValue: {
         summary: defaultProps.barBgColor,
         details: null
@@ -159,7 +149,7 @@ export const desc_SliderAlignProps = {
     description: 'Color of scrollbar',
     table: {
       ...desc_CSS.color.table,
-      subcategory: 'scrollbar',
+      category: 'ScrollBar',
       defaultValue: {
         summary: defaultProps.barColor,
         details: null

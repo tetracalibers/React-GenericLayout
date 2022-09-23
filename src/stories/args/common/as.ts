@@ -6,7 +6,7 @@ export const desc_as = {
     description:
       'If you specify an HTML tag name, the component will be rendered using that tag, preserving semantic markup; if you specify a React component, you can merge the styles and props that the component has.',
     table: {
-      category: 'character',
+      category: 'polymorphic',
       type: {
         summary: null
       },

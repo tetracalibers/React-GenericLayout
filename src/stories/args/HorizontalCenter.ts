@@ -4,15 +4,13 @@ import { defaultProps } from '../../components/HorizontalCenter/model'
 
 export const desc_HorizontalCenterProps = {
   paddingXV: {
+    ...desc_CSS.padding,
     control: {
       type: 'number'
     },
     description: 'Space at both ends of content',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.padding.table,
       defaultValue: {
         summary: defaultProps.paddingXV,
         details: null
@@ -20,16 +18,14 @@ export const desc_HorizontalCenterProps = {
     }
   },
   paddingXU: {
+    ...desc_CSS.padding,
     control: {
       type: 'select'
     },
     options: CSSt.Unit.length,
     description: 'Units of paddingXV',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.padding.table,
       defaultValue: {
         summary: defaultProps.paddingXU,
         details: null
@@ -51,6 +47,7 @@ export const desc_HorizontalCenterProps = {
     }
   },
   maxWidthU: {
+    ...desc_CSS.maxWidth,
     control: {
       type: 'select'
     },
@@ -65,15 +62,13 @@ export const desc_HorizontalCenterProps = {
     }
   },
   textCenter: {
+    ...desc_CSS.textAlign,
     control: {
       type: 'boolean'
     },
     description: 'Whether text is also centered or not',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.textAlign.table,
       defaultValue: {
         summary: defaultProps.textCenter,
         details: null
@@ -90,7 +85,7 @@ export const desc_HorizontalCenterProps = {
       type: {
         summary: null
       },
-      category: 'style control',
+      category: 'style',
       defaultValue: {
         summary: defaultProps.byContentWidth,
         details: null

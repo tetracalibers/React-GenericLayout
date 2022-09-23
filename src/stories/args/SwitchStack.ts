@@ -1,4 +1,5 @@
 import { CSSt } from '@polym/react-props'
+import { desc_CSS } from '@polym/story-cssdata'
 import { defaultProps } from '../../components/SwitchStack/model'
 
 export const desc_SwitchStackProps = {
@@ -12,7 +13,7 @@ export const desc_SwitchStackProps = {
       type: {
         summary: null
       },
-      category: 'style control',
+      category: 'style',
       defaultValue: {
         summary: defaultProps.limit,
         details: null
@@ -20,16 +21,14 @@ export const desc_SwitchStackProps = {
     }
   },
   spaceV: {
+    ...desc_CSS.gap,
     control: {
       type: 'number'
     },
     description:
       'Numeric value representing the spacing of elements horizontally aligned',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.gap.table,
       defaultValue: {
         summary: defaultProps.spaceV,
         details: null
@@ -37,16 +36,14 @@ export const desc_SwitchStackProps = {
     }
   },
   spaceU: {
+    ...desc_CSS.gap,
     control: {
       type: 'select'
     },
     options: CSSt.Unit.length,
     description: 'Units of spaceV',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.gap.table,
       defaultValue: {
         summary: defaultProps.spaceU,
         details: null
@@ -63,7 +60,7 @@ export const desc_SwitchStackProps = {
       type: {
         summary: null
       },
-      category: 'style control',
+      category: 'style',
       defaultValue: {
         summary: defaultProps.breakpointV,
         details: null
@@ -80,7 +77,7 @@ export const desc_SwitchStackProps = {
       type: {
         summary: null
       },
-      category: 'style control',
+      category: 'style',
       defaultValue: {
         summary: defaultProps.breakpointU,
         details: null

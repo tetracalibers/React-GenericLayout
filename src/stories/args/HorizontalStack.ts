@@ -4,16 +4,14 @@ import { desc_CSS } from '@polym/story-cssdata'
 
 export const desc_HorizontalStackProps = {
   spaceV: {
+    ...desc_CSS.gap,
     control: {
       type: 'number'
     },
     description:
       'Numeric value representing the Minimum space to be reserved between child elements',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.gap.table,
       defaultValue: {
         summary: defaultProps.spaceV,
         details: null
@@ -21,16 +19,14 @@ export const desc_HorizontalStackProps = {
     }
   },
   spaceU: {
+    ...desc_CSS.gap,
     control: {
       type: 'select'
     },
     options: CSSt.Unit.length,
     description: 'Units of spaceV',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.gap.table,
       defaultValue: {
         summary: defaultProps.spaceU,
         details: null

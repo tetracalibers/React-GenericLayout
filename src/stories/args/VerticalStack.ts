@@ -1,4 +1,5 @@
 import { CSSt } from '@polym/react-props'
+import { desc_CSS } from '@polym/story-cssdata'
 import { defaultProps } from '../../components/VerticalStack/model'
 
 export const desc_VerticalStackProps = {
@@ -11,7 +12,7 @@ export const desc_VerticalStackProps = {
       type: {
         summary: null
       },
-      category: 'style control',
+      category: 'style',
       defaultValue: {
         summary: defaultProps.recursive,
         details: null
@@ -27,7 +28,7 @@ export const desc_VerticalStackProps = {
       type: {
         summary: null
       },
-      category: 'style control',
+      category: 'style',
       defaultValue: {
         summary: defaultProps.separateFrom,
         details: null
@@ -35,16 +36,14 @@ export const desc_VerticalStackProps = {
     }
   },
   spaceV: {
+    ...desc_CSS.margin,
     control: {
       type: 'number'
     },
     description:
       'Numeric value representing the spacing of elements in a vertical line',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.margin.table,
       defaultValue: {
         summary: defaultProps.spaceV,
         details: null
@@ -52,16 +51,14 @@ export const desc_VerticalStackProps = {
     }
   },
   spaceU: {
+    ...desc_CSS.margin,
     control: {
       type: 'select'
     },
     options: CSSt.Unit.length,
     description: 'Units of spaceV',
     table: {
-      type: {
-        summary: null
-      },
-      category: 'style control',
+      ...desc_CSS.margin.table,
       defaultValue: {
         summary: defaultProps.spaceU,
         details: null
