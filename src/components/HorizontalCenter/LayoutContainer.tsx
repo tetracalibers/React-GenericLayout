@@ -5,27 +5,25 @@ export const LayoutContainer = styled.div<CharacterProps>`
   --paddingX: ${(props) => props.paddingXV! + props.paddingXU!};
   --max-width: ${(props) => props.maxWidthV! + props.maxWidthU!};
 
-  && {
-    ${({ byContentWidth }) => {
-      return (
-        byContentWidth &&
-        css`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        `
-      )
-    }}
+  ${({ byContentWidth }) =>
+    byContentWidth &&
+    css`
+      && {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    `}
 
-    ${({ textCenter }) => {
-      return (
-        textCenter &&
-        css`
-          text-align: center;
-        `
-      )
-    }}
-    
+  ${({ textCenter }) =>
+    textCenter &&
+    css`
+      && {
+        text-align: center;
+      }
+    `}
+  
+  && {
     box-sizing: border-box;
     padding-left: var(--paddingX);
     padding-right: var(--paddingX);

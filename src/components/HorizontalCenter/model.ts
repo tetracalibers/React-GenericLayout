@@ -12,9 +12,9 @@ const conf = {
   textCenter: NotRequired<boolean>(false),
   // 子要素をそのコンテンツ幅に基づいて中央揃えにさせるか
   byContentWidth: NotRequired<boolean>(false),
-  paddingXV: NotRequired<number>(0),
+  paddingXV: NotRequired<number>(1),
   paddingXU: NotRequired<CSSt.Unit.Length>('rem'),
-  maxWidthV: NotRequired<number>(60),
+  maxWidthV: NotRequired<number>(30),
   maxWidthU: NotRequired<CSSt.Unit.Length>('rem')
 }
 
