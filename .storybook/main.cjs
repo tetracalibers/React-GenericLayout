@@ -12,8 +12,7 @@ module.exports = {
         actions: false
       }
     },
-    '@storybook/addon-storysource',
-    '@whitespace/storybook-addon-html'
+    '@storybook/addon-storysource'
   ],
   framework: '@storybook/react',
   core: {
