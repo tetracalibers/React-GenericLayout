@@ -31,7 +31,7 @@
     "format": "prettier --write \"**/*.+(js|json|yml|ts|tsx)\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "predeploy": "build-storybook",
+    "predeploy": "yarn build-storybook",
     "deploy": "rm -rf node_modules/.cache/gh-pages && yarn gh-pages -d storybook-static"
   },
   "peerDependencies": {
