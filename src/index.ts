@@ -4,6 +4,7 @@ import { VerticalStack } from './components/VerticalStack'
 import { SwitchStack } from './components/SwitchStack'
 import { HorizontalStack } from './components/HorizontalStack'
 import { Grid } from './components/Grid'
+import { VerticalCenter } from './components/VerticalCenter'
 
 export {
   AspectFrame,
@@ -11,5 +12,6 @@ export {
   VerticalStack,
   SwitchStack,
   HorizontalStack,
-  Grid
+  Grid,
+  VerticalCenter
 }

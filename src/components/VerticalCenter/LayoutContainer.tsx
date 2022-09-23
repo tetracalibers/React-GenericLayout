@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { CharacterProps } from './model'
 
 export const LayoutContainer = styled.div<CharacterProps>`
@@ -16,8 +16,8 @@ export const LayoutContainer = styled.div<CharacterProps>`
 
   & > * {
     /* 各子要素に上下のmarginを設定 */
-    margin-top: var(--space);
-    margin-bottom: var(--space);
+    margin-top: calc(var(--space) * 0.5);
+    margin-bottom: calc(var(--space) * 0.5);
   }
 
   & > :first-child {
@@ -28,8 +28,10 @@ export const LayoutContainer = styled.div<CharacterProps>`
     margin-bottom: 0;
   }
 
-  & > :nth-child(${(props) => props.central}) {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+  ${(props) => css`
+    & > :nth-child(${props.central}) {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  `}
 `
