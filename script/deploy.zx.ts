@@ -16,7 +16,7 @@ await within(async () => {
 
   await fs.writeFile(
     'iframe.html',
-    iframehtml.replace(/\/assets/g, '/polym-every-layout/assets')
+    iframehtml.replace(/\/assets/g, '/polym-generic-layout/assets')
   )
 
   const assetjs_path = await glob('assets/*.@(map|js)')
@@ -25,7 +25,7 @@ await within(async () => {
     const assetjs = await fs.readFile('./' + path, 'utf-8')
     await fs.writeFile(
       './' + path,
-      assetjs.replace(/assets\//g, 'polym-every-layout/assets/')
+      assetjs.replace(/assets\//g, 'polym-generic-layout/assets/')
     )
   })
 })

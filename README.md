@@ -1,4 +1,4 @@
-# @polym/every-layout
+# @polym/generic-layout
 
 **Collection of React generic layout components inspired by [Every-Layout](https://every-layout.dev/)**
 
