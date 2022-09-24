@@ -4,7 +4,7 @@
 
 ## Demo & Document
 
-[Click here to visit the **playground site** where you can operate and play props.](https://tetracalibers.github.io/polym-every-layout/?path=/story/layout-introduction--page)
+[Click here to visit the **playground site** where you can operate and play props.](https://tetracalibers.github.io/polym-generic-layout/?path=/story/layout-introduction--page)
 
 ## Concept
 
