@@ -15,7 +15,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'Suitable solution for centering elements horizontally'
+        component: 'Layout with layers on top of layers'
       }
     }
   },

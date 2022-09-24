@@ -7,6 +7,7 @@ import { desc_children } from './args/common/children'
 import { desc_ref } from './args/common/ref'
 import styled from 'styled-components'
 import sampleImage from './assets/scenery.jpg'
+import React from 'react'
 
 export default {
   title: 'layout/AspectFrame',
@@ -14,8 +15,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component:
-          'Suitable solution to crop the media to the specified aspect ratio'
+        component: 'Responsive images with preserved aspect ratio'
       }
     }
   },

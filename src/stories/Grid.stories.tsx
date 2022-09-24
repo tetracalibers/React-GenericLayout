@@ -14,7 +14,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'Elements to be placed in a grid'
+        component: 'Responsive grid layout without explicit media queries'
       }
     }
   },

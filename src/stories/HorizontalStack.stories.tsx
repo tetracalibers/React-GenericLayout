@@ -15,7 +15,7 @@ export default {
     docs: {
       description: {
         component:
-          'Suitable solution to arrange elements of different shapes respectively'
+          'Horizontal alignment layout that wraps nicely on small screens'
       }
     }
   },

@@ -15,7 +15,7 @@ export default {
     docs: {
       description: {
         component:
-          'Elements to be vertically centered within a specific area and the elements contained in that area'
+          'Layout that vertically centers any of several vertically aligned elements'
       }
     }
   },

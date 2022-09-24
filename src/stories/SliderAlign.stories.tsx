@@ -14,7 +14,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'Elements you want to put side by side in a slider format'
+        component: 'Scrollable horizontal alignment layout'
       }
     }
   },

@@ -14,7 +14,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'Suitable solution for centering elements horizontally'
+        component: 'Horizontal Centering Layout'
       }
     }
   },

@@ -15,7 +15,7 @@ export default {
     docs: {
       description: {
         component:
-          'Suitable solution to achieve a responsive layout with a sidebar on one side'
+          'Layout switches from horizontal to vertical depending on screen width and number of elements'
       }
     }
   },

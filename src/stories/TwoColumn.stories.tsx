@@ -16,7 +16,7 @@ export default {
     docs: {
       description: {
         component:
-          'Suitable solution to achieve a responsive layout with a sidebar on one side'
+          'Responsive two-column layout with side content and main content'
       }
     }
   },

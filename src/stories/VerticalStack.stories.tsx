@@ -14,8 +14,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component:
-          'Suitable solution to achieve a responsive layout with a sidebar on one side'
+        component: 'Layout with elements evenly spaced vertically'
       }
     }
   },
