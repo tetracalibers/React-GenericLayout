@@ -15,7 +15,7 @@ export default defineConfig({
       fileName: (format) => `polym-generic-layout.${format}.js`
     },
     rollupOptions: {
-      external: ['react', 'react-dom']
+      external: ['react', 'react-dom', 'styled-components']
     }
   }
 })
