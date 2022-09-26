@@ -1,6 +1,16 @@
 {
   "name": "@polym/generic-layout",
   "description": "Collection of React generic layout components inspired by every-layout",
+  "keywords": [
+    "react",
+    "react-component",
+    "ui",
+    "component",
+    "polym-ui",
+    "css",
+    "layout",
+    "every-layout"
+  ],
   "author": {
     "name": "tomixy"
   },
