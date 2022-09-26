@@ -12,21 +12,30 @@ await within(async () => {
   // .nojekyllファイルを作成
   await $`touch .nojekyll`
 
-  const iframehtml = await fs.readFile('iframe.html', 'utf-8')
+  const iframepath = path.resolve(__dirname, '../storybook-static/iframe.html')
+  const iframehtml = await fs.readFile(iframepath, 'utf-8')
 
   await fs.writeFile(
-    'iframe.html',
+    iframepath,
     iframehtml.replace(/\/assets/g, '/polym-generic-layout/assets')
   )
 
-  const assetjs_path = await glob('assets/*.@(map|js)')
+  await within(async () => {
+    cd('assets')
 
-  await assetjs_path.forEach(async (path) => {
-    const assetjs = await fs.readFile('./' + path, 'utf-8')
-    await fs.writeFile(
-      './' + path,
-      assetjs.replace(/assets\//g, 'polym-generic-layout/assets/')
-    )
+    const assetjs_path = await glob('*@(.map|.js)')
+
+    await assetjs_path.forEach(async (fileName) => {
+      const filePath = path.resolve(
+        __dirname,
+        `../storybook-static/assets/${fileName}`
+      )
+      const assetjs = await fs.readFile(filePath, 'utf-8')
+      await fs.writeFile(
+        filePath,
+        assetjs.replace(/assets\//g, 'polym-generic-layout/assets/')
+      )
+    })
   })
 })
 
