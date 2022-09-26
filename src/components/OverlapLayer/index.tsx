@@ -1,4 +1,7 @@
-import { PolymorphicComponentPropWithRef } from '@polym/react-props'
+import {
+  PolymorphicComponentPropWithRef,
+  PolymorphicRef
+} from '@polym/react-props'
 import { ElementType, forwardRef, ReactElement } from 'react'
 import { UpperAllProps } from './model/upper'
 import { Overlay } from './Overlay'
@@ -8,12 +11,10 @@ type UpperComponent = <As extends ElementType>(
   props: UpperAllProps<As>
 ) => ReactElement | null
 
-const _Upper = <As extends ElementType>({
-  children,
-  as,
-  ref,
-  ...props
-}: UpperAllProps<As>) => {
+const _Upper = <As extends ElementType>(
+  { children, as, ...props }: UpperAllProps<As>,
+  ref: PolymorphicRef<As>
+) => {
   return (
     <Overlay as={as || 'div'} {...props} ref={ref}>
       {children}
@@ -27,12 +28,10 @@ type RootProps<As extends ElementType> = PolymorphicComponentPropWithRef<As> & {
   children: [ReactElement<any, typeof Upper>, ReactElement]
 }
 
-const _OverlapLayer = <As extends ElementType>({
-  children,
-  as,
-  ref,
-  ...props
-}: RootProps<As>) => {
+const _OverlapLayer = <As extends ElementType>(
+  { children, as, ...props }: RootProps<As>,
+  ref: PolymorphicRef<As>
+) => {
   return (
     <OverlayOrigin as={as || 'div'} ref={ref} {...props}>
       {children}

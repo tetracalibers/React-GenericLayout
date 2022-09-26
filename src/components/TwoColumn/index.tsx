@@ -1,3 +1,4 @@
+import { PolymorphicRef } from '@polym/react-props'
 import { ElementType, forwardRef, ReactElement } from 'react'
 import { LayoutContainer } from './LayoutContainer'
 import { defaultProps, AllProps } from './model'
@@ -7,9 +8,10 @@ type TwoColumnComponent = <As extends ElementType>(
 ) => ReactElement | null
 
 const _TwoColumn = <As extends ElementType>(
-  { ref, as, children, ...props }: AllProps<As> = {
+  { as, children, ...props }: AllProps<As> = {
     ...defaultProps
-  } as AllProps<As>
+  } as AllProps<As>,
+  ref: PolymorphicRef<As>
 ) => {
   return (
     <LayoutContainer {...props} ref={ref} as={as || 'div'}>
